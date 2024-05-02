@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#C1DD36;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.logo {
+ max-width: 300px;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	background-color: #357749;
+  }
+
+  #navegacion {
+	display: flex;
+	position: relative;
+	font-size: 25px;
+	width: 100%;
+	justify-content: center;
+  }
+
+  .items {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+  }
+
+  .item-menu {
+	display: inline-block;
+	position: relative;
+  }
+
+  #menu {
+	display: block;
+	padding: 10px;
+	background-color: #357749;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	
+  }
+
+  #navegacion ul li a:hover {
+	background-color: #1d5531;
+
+}
+
+#navegacion li:hover ul {
+	display: block;
+	text-align: center;
+}
+
+#navegacion li {
+	position: relative; 
+  }
+
+  .sub-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
+	background-color: #357749;
+  }
+
+  .item-menu:hover .sub-menu {
+	max-height: 300px; 
+  }
+
+  .li {
+	display: block;
+	padding: 10px;
+  }
+
+  .li a {
+	color: #000;
+	text-decoration: none;
+  }
+
+  .li:hover {
+	background-color: #1d5531;
+  }
+
+#header-contenedor {
+    display: flex;
+	align-items: center;
+	padding: 10px ;
+	justify-content: center;
+}
+
+#aniversario-contenedor {
+	position: relative;
+	width: 300px; /* Ajusta el ancho según tus necesidades */
+	height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+#aniversario img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: opacity 0.5s ease; /* Agrega una transición suave al cambio de opacidad */
+}
+
+#aniversario img:last-child {
+	opacity: 0; /* La segunda imagen inicialmente invisible */
+}
+
+#aniversario:hover img:first-child {
+	opacity: 0; /* Al pasar el mouse, oculta la primera imagen */
+}
+
+#aniversario:hover img:last-child {
+	opacity: 1; /* Al pasar el mouse, muestra la segunda imagen */
+}
+
+.header-titulo {
+	flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    color: #154D05;
+    font-size: 54px;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 29px;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+.caja-principal{
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parque- p,
+.datos-fundamentales p {
+	margin-left: 15px;
+}
+
+article,
+aside{
+    text-align: center;
+    border: 3px solid #0F3710;
+    font-weight: bold;
+    font-size: 125%;
+    margin: 20px 5px;
+}
+
+.jardin-botanico, 
+.datos-fundamentales, .Informacion {
+    width: 95%;
+	padding-left: 15px;
+}
+
+.tip img {
+    max-width: 10%;
+    max-height: 10%;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+#mapabotanico {
+    text-align: center;
+}
+
+#mapabotanico img {
+    width: 90%;
+    border: 3px solid #0F3710;	
+}
+
+.ubic img {
+    width: 25%;
+}
+
+.rojohr {
+    color: #D71316;
+}
+
+.azul {
+    color: #0E1364;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+article ul,
+aside ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+article li,
+aside li {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.Informacion p{
+	margin-top: 3px;
+}   
+
+.caja-secundaria {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.footer {
+	height: 100px;
+    font-weight: bold;
+    font-size: 125%;
+	display: flex;
+	margin: 20px auto;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.footer p {
+	margin: 25px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.img-footer {
+	display: flex;
+    margin-right: 20px; /* O ajusta según sea necesario */
+}
+
+address a img {
+    max-height: 140%;
+}
+
+.contenedor-main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+    
+.slider-container{
+    width: 66%; /* El doble del ancho del slider para acomodar ambos paquetes de imágenes */
+    overflow: hidden;
+    margin: 20px 15px;
+    border: 3px solid #0F3710;
+}
+
+  .slider-section {
+		  text-align: center;
+		  height: 33.33%;
+	  }
+	  
+	  .slider-section h2 {
+		  margin: 8px auto;
+		  
+	  }
+
+.slider-imagenes,.slider-imagenes-2,.slider-imagenes-3 {
+    display: flex;
+    width: 200%; /* El doble del ancho para acomodar ambos paquetes de imágenes */
+    animation: slide 20s infinite; /* Ajusta la duración según tus necesidades */
+}
+
+.slider-imagenes img,.slider-imagenes-2 img,.slider-imagenes-3 img  {
+    width: 50%; /* Ajusta según el número de paquetes de imágenes */
+	object-fit: cover;
+    transition: transform 0.5s ease; /* Agrega una transición suave para el efecto de desplazamiento */
+}
+
+@keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+      
+    }
+    33.33% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Diseño responsive */
+
+  @media screen and (max-width: 1200px) {
+    /* Estilos para pantallas más pequeñas (ejemplo: tablets y dispositivos móviles) */
+
+    #header-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-titulo {
+        margin-top: 20px; /* Espaciado entre el logo y el título */
+    }
+
+    .caja-principal,.caja-secundaria,.slider-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .tip img {
+        max-width: 20%;
+        max-height: 20%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .slider-container {
+        width: 66%;
+		overflow: hidden;
+		margin: 20px auto;
+		display: flex;
+		flex-wrap: nowrap;
+	    }
+	  
+	  
+	  .slider-section {
+		  text-align: center;
+	  }
+	  
+	  .slider-section h2 {
+		  margin: 15px auto;
+		  
+	  }
+
+    .slider-imagenes,
+    .slider-imagenes-2,
+    .slider-imagenes-3 {
+        width: 200%;
+		display: flex;
+		animation: slide 20s infinite;
+    }
+
+    .slider-imagenes img,
+    .slider-imagenes-2 img,
+    .slider-imagenes-3 img {
+        width: 50%;
+		transition: transform 0.5s ease;
+		
+    }
+
+    .caja-secundaria {
+        margin-top: 20px;
+		
+    }
+	
+	  .contenedor-main {
+		  display: flex;
+		  flex-direction: column;
+	  }
+	  
+	  #logo {
+		  max-width: 250px;
+	  }
+	  
+	  #logo img {
+		  max-width: 100%;
+	  }
+	  
+	  .caja-principal , .caja-secundaria , .slider-container {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+	  }
+	  
+@keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+      
+    }
+    33.33% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-100%);
+    }
+  }
+	  
+	  .footer {
+		  
+	height: 250px;
+    font-weight: bold;
+    font-size: 125%;
+	display: flex;
+	margin: 20px auto;
+	text-align: center;
+	justify-content: space-between;
+    flex-direction: column-reverse;
+		  align-items: center;
+}
+	  
+	  .footer p {
+		  margin: 25px;
+		  
+	  }
+	  
+	  .img-footer {
+		  display: flex;
+		  margin-right: 20px;
+		  
+	  }
+	  address {
+		  display: flex;
+		  
+	  }
+	  address a img {
+		  max-height: 100%;
+		  width: auto;
+	  }
+	  .img-footer img {
+		  max-height: 150px;
+		  
+	  }
+	  
+    }

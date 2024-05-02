@@ -1,0 +1,329 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+		* {padding:0px;
+		   margin:0px;
+			box-sizing: border-box;
+
+}
+
+body {
+	background-color:#009966; 
+}
+
+
+
+header h1 {
+	text-align: center;
+  font-size: 60px;
+}
+
+.indice, .informacion {
+	width: 95%;
+	padding-left: 15px;
+	height: 100%;
+}
+
+ .logo img {
+	   max-width: 100%;
+}
+
+.logo {
+	max-width: 300px;
+}
+
+
+aside,article{ 
+	text-align: center;
+	border:3px solid #0F3710;
+	font-weight:bold;
+	font-size: 125%;
+	margin: 20px 5px ;
+  padding-top: 5px;
+	
+}
+article p {
+	margin-top: 20px;
+	
+	}
+
+article p, aside p{
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 23px;
+	line-height: 1.4;
+	
+}
+
+article li , aside li {
+	text-align: left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-size: 20px ;
+	
+}
+
+.caja-principal, .caja-secundaria, .slider-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.contenedor-main {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+	
+	
+}
+
+.slider-container {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 66%;
+	overflow: hidden;
+	margin: 20px 15px;
+	border:3px solid #0F3710;
+	
+}
+
+.slider-section {
+	text-align: center;
+	
+}
+
+.slider-section h2{
+	margin: 15px auto;
+	
+	
+}
+
+.slider-imagenes, .slider-imagenes-2, .slider-imagenes-3 {
+	display: flex;
+	width: 200%;
+	animation: slide 20s infinite ;
+	
+}
+.slider-imagenes img, .slider-imagenes-2 img, .slider-imagenes-3 img {
+	width: 50%;
+	transition: transform 0.5s ease;
+	
+}
+
+@keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+      
+    }
+    33.33% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-100%);
+    }
+	
+  }
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	margin-left: 25px;
+	font-weight:bold;
+	font-size: 125%;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	background-color: #357749;
+  }
+
+  #navegacion {
+	display: flex;
+	position: relative;
+	font-size: 25px;
+	width: 100%;
+	justify-content: center;
+  }
+
+  .items {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+  }
+
+  .item-menu {
+	display: inline-block;
+	position: relative;
+  }
+
+  #menu {
+	display: block;
+	padding: 10px;
+	background-color: #357749;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	
+  }
+
+  #navegacion ul li a:hover {
+	background-color: #1d5531;
+
+}
+
+#navegacion li:hover ul {
+	display: block;
+	text-align: center;
+}
+
+#navegacion li {
+	position: relative; 
+  }
+
+  .sub-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
+	background-color: #357749;
+  }
+
+  .item-menu:hover .sub-menu {
+	max-height: 300px; 
+  }
+
+  .li {
+	display: block;
+	padding: 10px;
+  }
+
+  .li a {
+	color: #000;
+	text-decoration: none;
+  }
+
+  .li:hover {
+	background-color: #1d5531;
+  }
+
+#header-contenedor {
+	display: flex;
+	align-items: center;
+	padding: 10px ;
+	justify-content: center;
+	
+}
+
+@media screen and (max-width: 1200px) {
+    /* Estilos para pantallas más pequeñas (ejemplo: tablets y dispositivos móviles) */
+
+    
+   
+    .slider-container {
+        width: 66%;
+		overflow: hidden;
+		margin: 20px auto;
+		display: flex;
+		flex-wrap: nowrap;
+		border: 3px solid #0f3710;
+	    }
+	  
+	  
+	  .slider-section {
+		  text-align: center;
+	  }
+	  
+	  .slider-section h2 {
+		  margin: 15px auto;
+		  
+	  }
+
+    .slider-imagenes,
+    .slider-imagenes-2,
+    .slider-imagenes-3 {
+        width: 200%;
+		display: flex;
+		animation: slide 20s infinite;
+    }
+
+    .slider-imagenes img,
+    .slider-imagenes-2 img,
+    .slider-imagenes-3 img {
+        width: 50%;
+		transition: transform 0.5s ease;
+		
+    }
+
+	
+	  .contenedor-main {
+		  display: flex;
+		  flex-direction: column;
+	  }
+	  
+	  
+	 
+	  
+	  .caja-principal , .caja-secundaria , .slider-container {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+	  }
+	  
+@keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+      
+    }
+    33.33% {
+      transform: translateX(-50%);
+    }
+    66.66% {
+      transform: translateX(-100%);
+    }
+  }
+	  
+	  .footer {
+		  
+	height: auto;
+    font-weight: bold;
+    font-size: 125%;
+	margin: 20px auto;
+	text-align: center;
+	justify-content: space-between;
+		  align-items: center;
+		  position: relative;
+}
+	  
+	  
+	  
+	  
+	 
+	
+	
+	article ul, aside ul {
+		text-align: left;
+		padding-left: 20px;
+		
+	}
+	
+	article li, aside li {
+		text-align: left;
+		padding-bottom: 10px;
+		
+	}
+	  
+	  
+	  }
+     
+
+ 
